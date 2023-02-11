@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0"
+            prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="simulator.FXMLController">
+    <Button layoutX="698.0" layoutY="377.0" mnemonicParsing="false" onAction="#load_code" prefWidth="70.0" text="Load"/>
+    <Button layoutX="778.0" layoutY="377.0" mnemonicParsing="false" onAction="#readFile" prefWidth="70.0" text="IPL"/>
+    <Button layoutX="618.0" layoutY="377.0" mnemonicParsing="false" onAction="#store_code" prefWidth="70.0"
+            text="Store"/>
+    <Label layoutX="93.0" layoutY="39.0" text="PC"/>
+    <Label layoutX="88.0" layoutY="79.0" text="MAR"/>
+    <TextField fx:id="MAR_Text" layoutX="133.0" layoutY="74.0"/>
+    <Label layoutX="88.0" layoutY="119.0" text="MBR"/>
+    <TextField fx:id="MBR_Text" layoutX="133.0" layoutY="114.0"/>
+    <Button layoutX="758.0" layoutY="428.0" mnemonicParsing="false" onAction="#Run" prefHeight="30.0" prefWidth="50.0"
+            text="Run"/>
+    <Button layoutX="698.0" layoutY="428.0" mnemonicParsing="false" onAction="#SS" prefHeight="30.0" prefWidth="50.0"
+            text="SS"/>
+    <TextField fx:id="GPR0_Text" layoutX="570.0" layoutY="34.0"/>
+    <Label layoutX="520.0" layoutY="39.0" text="GPR 0"/>
+    <TextField fx:id="GPR1_Text" layoutX="570.0" layoutY="74.0"/>
+    <TextField fx:id="GPR2_Text" layoutX="570.0" layoutY="114.0"/>
+    <Label layoutX="520.0" layoutY="79.0" text="GPR 1"/>
+    <Label layoutX="520.0" layoutY="119.0" text="GPR 2"/>
+    <Label layoutX="520.0" layoutY="159.0" text="GPR 3"/>
+    <TextField fx:id="GPR3_Text" layoutX="570.0" layoutY="154.0"/>
+    <TextField fx:id="IXR3_Text" layoutX="570.0" layoutY="284.0"/>
+    <Label layoutX="520.0" layoutY="289.0" text="IXR 3"/>
+    <Label layoutX="520.0" layoutY="249.0" text="IXR 2"/>
+    <Label layoutX="520.0" layoutY="209.0" text="IXR 1"/>
+    <TextField fx:id="IXR2_Text" layoutX="570.0" layoutY="244.0"/>
+    <TextField fx:id="IXR1_Text" layoutX="570.0" layoutY="204.0"/>
+    <RadioButton disable="true" layoutX="133.0" layoutY="154.0" mnemonicParsing="false"/>
+    <RadioButton disable="true" layoutX="173.0" layoutY="154.0" mnemonicParsing="false"/>
+    <RadioButton disable="true" layoutX="213.0" layoutY="154.0" mnemonicParsing="false"/>
+    <RadioButton disable="true" layoutX="252.0" layoutY="154.0" mnemonicParsing="false"/>
+    <Label layoutX="93.0" layoutY="154.0" text="CC"/>
+    <Label layoutX="134.0" layoutY="174.0" text=" 1       2       3       4"/>
+    <Label layoutX="93.0" layoutY="209.0" text="IR"/>
+    <TextField fx:id="IR_Text" editable="false" layoutX="133.0" layoutY="204.0"/>
+    <Label layoutX="88.0" layoutY="249.0" text="MFR"/>
+    <TextField fx:id="MFR_Text" editable="false" layoutX="133.0" layoutY="244.0"/>
+    <TextField fx:id="PC_Text" layoutX="133.0" layoutY="34.0"/>
+    <Button fx:id="Op_1" layoutX="43.0" layoutY="392.0" mnemonicParsing="false" onAction="#change_ins" text="0"
+            textAlignment="CENTER"/>
+    <Button fx:id="Op_2" layoutX="73.0" layoutY="392.0" mnemonicParsing="false" onAction="#change_ins" text="0"
+            textAlignment="CENTER"/>
+    <Button fx:id="Op_3" layoutX="103.0" layoutY="392.0" mnemonicParsing="false" onAction="#change_ins" text="0"
+            textAlignment="CENTER"/>
+    <Button fx:id="Op_6" layoutX="193.0" layoutY="392.0" mnemonicParsing="false" onAction="#change_ins" text="0"
+            textAlignment="CENTER"/>
+    <Button fx:id="Op_5" layoutX="163.0" layoutY="392.0" mnemonicParsing="false" onAction="#change_ins" text="0"
+            textAlignment="CENTER"/>
+    <Button fx:id="Op_4" layoutX="133.0" layoutY="392.0" mnemonicParsing="false" onAction="#change_ins" text="0"
+            textAlignment="CENTER"/>
+    <Button fx:id="GPR_2" layoutX="258.0" layoutY="392.0" mnemonicParsing="false" onAction="#change_ins" text="0"
+            textAlignment="CENTER"/>
+    <Button fx:id="GPR_1" layoutX="228.0" layoutY="392.0" mnemonicParsing="false" onAction="#change_ins" text="0"
+            textAlignment="CENTER"/>
+    <Button fx:id="IXR_1" layoutX="295.0" layoutY="392.0" mnemonicParsing="false" onAction="#change_ins" text="0"
+            textAlignment="CENTER"/>
+    <Button fx:id="IXR_2" layoutX="325.0" layoutY="392.0" mnemonicParsing="false" onAction="#change_ins" text="0"
+            textAlignment="CENTER"/>
+    <Button fx:id="I" layoutX="360.0" layoutY="392.0" mnemonicParsing="false" onAction="#change_ins" text="0"
+            textAlignment="CENTER"/>
+    <Button fx:id="Adr_3" layoutX="455.0" layoutY="392.0" mnemonicParsing="false" onAction="#change_ins" text="0"
+            textAlignment="CENTER"/>
+    <Button fx:id="Adr_4" layoutX="485.0" layoutY="392.0" mnemonicParsing="false" onAction="#change_ins" text="0"
+            textAlignment="CENTER"/>
+    <Button fx:id="Adr_5" layoutX="515.0" layoutY="392.0" mnemonicParsing="false" onAction="#change_ins" text="0"
+            textAlignment="CENTER"/>
+    <Button fx:id="Adr_2" layoutX="425.0" layoutY="392.0" mnemonicParsing="false" onAction="#change_ins" text="0"
+            textAlignment="CENTER"/>
+    <Button fx:id="Adr_1" layoutX="395.0" layoutY="392.0" mnemonicParsing="false" onAction="#change_ins" text="0"
+            textAlignment="CENTER"/>
+    <Label layoutX="84.0" layoutY="446.0" text="Operation" textAlignment="CENTER">
+        <font>
+            <Font size="20.0"/>
+        </font>
+    </Label>
+    <Label layoutX="235.0" layoutY="446.0" text="GPR" textAlignment="CENTER">
+        <font>
+            <Font size="20.0"/>
+        </font>
+    </Label>
+    <Label layoutX="306.0" layoutY="446.0" text="IXR" textAlignment="CENTER">
+        <font>
+            <Font size="20.0"/>
+        </font>
+    </Label>
+    <Label layoutX="369.0" layoutY="446.0" text="I" textAlignment="CENTER">
+        <font>
+            <Font size="20.0"/>
+        </font>
+    </Label>
+    <Label layoutX="428.0" layoutY="446.0" text="Address" textAlignment="CENTER">
+        <font>
+            <Font size="20.0"/>
+        </font>
+    </Label>
+    <TextArea fx:id="res_Text" layoutX="133.0" layoutY="293.0" prefHeight="86.0" prefWidth="250.0"/>
+    <Label layoutX="80.0" layoutY="309.0" prefHeight="40.0" prefWidth="50.0" text="Result Panel" wrapText="true"/>
+    <Label layoutX="53.0" layoutY="422.0" text="1   2    3   4    5    6 ">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <Label layoutX="398.0" layoutY="422.0" text="12  13 14  15  16 ">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <Label layoutX="237.0" layoutY="422.0" text="7    8">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <Label layoutX="301.0" layoutY="422.0" text="9   10">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <Label layoutX="364.0" layoutY="422.0" text="11">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+</AnchorPane>
