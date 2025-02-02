@@ -8,9 +8,14 @@ The simulator supports Single Step Mode and IPL Mode, enabling users to either m
 
 🚀 Features
 
-• Instruction Execution: Supports STR, LDA, LDX, and STX operations. \n
+• Instruction Execution: Supports STR, LDA, LDX, and STX operations.
+
 • Single Step Execution: Manually execute each instruction step by step.
+
 • Preloaded Memory (IPL Mode): Automatically loads instructions from ROM.
+
 • Register Management: Handles X1 to X3 and R0 to R3 registers.
+
 • Memory Operations: Load and store values in memory and registers.
+
 • Fetch & Execute Simulation: Implements MAR, MBR, IR, and PC for instruction execution.
