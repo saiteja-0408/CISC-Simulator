@@ -7,6 +7,7 @@ The CISC Simulator is a project designed to simulate a Complex Instruction Set C
 The simulator supports Single Step Mode and IPL Mode, enabling users to either manually control execution or rely on automatic memory loading. The project consists of a memory class, register class, instruction decoder, backend class for execution, and an ISA class for effective address calculation.
 
 
+
 🚀 Features
 
 • Instruction Execution: Supports STR, LDA, LDX, and STX operations.
